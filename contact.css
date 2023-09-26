@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+ *{
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif;
+    color: black;
+ }
+
+body{
+    margin:0; 
+    padding:0;
+    background-color:rgb(171, 177, 182);
+ }
+
+ nav{
+    height: 10vh;
+    background-color: rgb(215, 215, 223);
+    display:flex;
+    align-items: center;
+ }
+
+ nav ul {
+    display: flex;
+    list-style-type: none;
+    align-items: center;
+ }
+
+ nav ul li {
+    margin: 15px;
+    font-size: 20px;
+    
+ }
+
+ .home{
+    font-weight: 1000 !important;
+
+ }
+
+.conbar{
+    flex: 50%;
+
+
+ }
+
+ .contactMe{
+    flex: 50%;
+    text-align: end;
+ }
+ .contactMe a {
+    background-color: rgb(11, 11, 68);
+    color: white;
+    font-weight: bold;
+    margin-right: 25px;
+    border-radius: 7px;
+ }
+
+ form{
+     height: auto;
+    width: 350px;
+    margin: auto;   
+ }
+
+ form h3 {
+    text-align: center;
+ }
+ form div{
+    margin-top: 1px;
+
+}
+
+label{
+    font-weight: bold;
+   
+}
+
+input, select, textarea {
+    background-color: #dfdede;
+    width: 100%;
+    padding: 5px;
+    margin-top: 3px;
+    border-radius: 5px;
+    border: 1px solid #dbdbdb;
+    resize: none;
+}
+
+button{
+    display: flex;
+    margin-top: 15px;
+    margin-left: 57vh;
+    background-color: rgb(18, 18, 65);
+    color: white;
+    border: none;
+    border-radius: 15px;
+    cursor: pointer;
+    
+}
+
+button:hover{
+    background-color: black;
+}
