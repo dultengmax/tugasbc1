@@ -3,7 +3,6 @@
  *{
     text-decoration: none;
     font-family: 'Poppins', sans-serif;
-    color: black;
  }
 
 body{
@@ -14,7 +13,7 @@ body{
 
  nav{
     height: 10vh;
-    background-color: rgb(215, 215, 223);
+    background-color: rgb(231, 231, 238);
     display:flex;
     align-items: center;
  }
@@ -26,19 +25,32 @@ body{
  }
 
  nav ul li {
-    margin: 15px;
+   margin: 15px;
     font-size: 20px;
+    cursor: pointer;
     
  }
 
  .home{
-    font-weight: 1000 !important;
+    color: black;
+ }
+
+ .home:hover{
+   font-weight:bold;
+ }
+
+ .MyProject{
+   color: black;
 
  }
 
+.MyProject:hover{
+  font-weight:bold;
+
+}
+
 .conbar{
     flex: 50%;
-
 
  }
 
@@ -49,10 +61,17 @@ body{
  .contactMe a {
     background-color: rgb(11, 11, 68);
     color: white;
+    padding: 5px 5px;
     font-weight: bold;
     margin-right: 25px;
     border-radius: 7px;
  }
+
+ .contactMe a:hover{
+   transition: 0.1s;
+background-color: rgb(3, 3, 26);
+
+}
 
  form{
      height: auto;

@@ -6,54 +6,72 @@
     color: black;
  }
 
-body{
-    margin:0; 
-    padding:0;
-    background-color:rgb(171, 177, 182);
- }
+ body{
+   margin:0; 
+   padding:0;
+   background-color:rgb(171, 177, 182);
+}
 
- nav{
-    height: 10vh;
-    background-color: rgb(215, 215, 223);
-    display:flex;
-    align-items: center;
- }
+nav{
+   height: 10vh;
+   background-color: rgb(231, 231, 238);
+   display:flex;
+   align-items: center;
+}
 
- nav ul {
-    display: flex;
-    list-style-type: none;
-    align-items: center;
- }
+nav ul {
+   display: flex;
+   list-style-type: none;
+   align-items: center;
+}
 
- nav ul li {
-    margin: 15px;
-    font-size: 20px;
-    
- }
+nav ul li {
+  margin: 15px;
+   font-size: 20px;
+   cursor: pointer;
+   
+}
 
- .home{
-    font-weight: 1000 !important;
+.home{
+   color: black;
+}
 
- }
+.home:hover{
+  font-weight:bold;
+}
+
+.MyProject{
+  color: black;
+
+}
+
+.MyProject:hover{
+font-weight: bolder;
+}
 
 .conbar{
-    flex: 50%;
+   flex: 50%;
 
+}
 
- }
+.contactMe{
+   flex: 50%;
+   text-align: end;
+}
+.contactMe a {
+   background-color: rgb(11, 11, 68);
+   color: white;
+   padding: 5px 5px;
+   font-weight: bold;
+   margin-right: 25px;
+   border-radius: 7px;
+}
 
- .contactMe{
-    flex: 50%;
-    text-align: end;
- }
- .contactMe a {
-    background-color: rgb(11, 11, 68);
-    color: white;
-    font-weight: bold;
-    margin-right: 25px;
-    border-radius: 7px;
- }
+.contactMe a:hover{
+  transition: 0.1s;
+background-color: rgb(3, 3, 26);
 
+}
  /* postcard */
  .conbox{
     
