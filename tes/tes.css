@@ -1,0 +1,10 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+.netnot{
+    height:500px;
+    width:400px;
+    display: flex;
+    background-color: aqua;
+}

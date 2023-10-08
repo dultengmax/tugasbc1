@@ -30,6 +30,10 @@ function submitData() {
       subject: subject,
       message: message,
     };
+
+
+
+    
   
     console.log(messagers);
     alert(messagers.nama);

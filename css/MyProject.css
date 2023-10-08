@@ -1,0 +1,264 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+ *{
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif;
+ }
+
+body{
+    margin:0; 
+    padding:0;
+    background-color:rgb(171, 177, 182);
+ }
+
+ nav{
+    height: 10vh;
+    background-color: rgb(231, 231, 238);
+    display:flex;
+    align-items: center;
+ }
+
+ nav ul {
+    display: flex;
+    list-style-type: none;
+    align-items: center;
+ }
+
+ nav ul li {
+   margin: 15px;
+    font-size: 20px;
+    cursor: pointer;
+    
+ }
+
+ .home{
+    color: black;
+ }
+
+ .home:hover{
+   font-weight:bold;
+ }
+
+ .MyProject{
+   color: black;
+
+ }
+
+.MyProject:hover{
+  font-weight:bold;
+
+}
+
+.conbar{
+    flex: 50%;
+
+ }
+
+ .contactMe{
+    flex: 50%;
+    text-align: end;
+ }
+ .contactMe a {
+    background-color: rgb(11, 11, 68);
+    color: white;
+    padding: 5px 5px;
+    font-weight: bold;
+    margin-right: 25px;
+    border-radius: 7px;
+ }
+
+ .contactMe a:hover{
+   transition: 0.1s;
+background-color: rgb(3, 3, 26);
+}
+
+/* my project */
+
+.blogContain {
+    display: flex;
+    width: 700px; height:auto;
+    margin: auto;
+}
+
+ .blogFrom  {
+    width: 400px; height: auto;
+    margin: auto;    
+}
+
+form{
+    margin-top: 2px;
+    width: auto;
+}
+
+form h2{
+    text-align: center;
+}
+
+form div{
+    margin-top: 5px;
+}
+
+.text{
+    display: flex;
+    flex-direction: column;
+}
+label{
+    font-weight:bold;
+    
+}
+
+text,textarea {
+    display: flex;
+    width: 100%;
+    box-sizing: border-box;
+    border-radius: 4px;
+    resize: none;
+    margin-bottom: 15px;
+
+}
+
+.dates{
+
+     display: flex;
+     flex-direction: column;
+     width: 250px;
+    margin: 10px;    
+}
+
+.dated{
+
+    display: flex;
+    flex-direction: column;
+    width: 250px;
+   margin: 10px;
+   
+}
+
+.date{
+    width: 100%;
+    height: 70px;
+    display: flex;
+    margin-top: 15px; 
+    flex-direction: row;
+    box-sizing: border-box;
+    border-radius: 4px;
+}
+.teknologi{
+    width: auto;
+    height: 60px;
+    justify-content: center;
+    display: flex;
+    flex-direction: row;
+}
+
+.upload{
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: start;
+    border-radius: 4px;
+    background-color: white;
+}
+.uplod{
+    border:none;
+ }
+
+.upl{
+    flex:100%;
+    width: auto;
+    height: 1px;
+}
+
+.submite{
+    display: flex;
+    justify-content: end;
+    margin-top: 20px;
+}
+
+.submit{
+    color:white;
+    background-color: rgb(4, 4, 51);
+    padding: 2px 12px;
+    border: none;
+    border-radius:7px;
+    margin-bottom: 20px;
+    justify-content: center;
+}
+
+
+.basic1{
+    background-color: rgb(241, 241, 241);
+
+}
+.title{
+    background-color: rgb(241, 241, 241);
+    width: 100%;
+    height: 70px;
+    display: flex;
+    justify-content: center
+
+}
+
+.basic2{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+     width: 100%;
+}
+
+.fillblog{
+    width: 300px;
+    height: 420px;
+    margin: 40px ;
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+    box-shadow: rgb(179, 179, 179) 0 4px 10px ;
+    background-color: rgb(253, 253, 253);
+}
+
+
+
+.image-display{
+    display: flex;
+    height: 200px;
+    width: 300px;
+    box-sizing: border-box;
+    border-radius: 10px;
+
+}
+
+
+.fit-text{
+ margin-bottom: 30px;
+ margin-left: 24px;
+ }
+
+.imagesc{
+    width: 100%;
+    height: 200px;
+    border-radius: 10px 10px 0 0;
+
+}
+
+.textblog{
+    height: auto; width: auto;
+}
+
+.icon{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+}
+
+#iconstate{
+    display: flex;
+    justify-content: center;
+    margin-right: 10px;
+    margin-bottom: 30px;
+}
+
+.submitblog{
+    display: flex;
+    justify-content: space-evenly;
+}
