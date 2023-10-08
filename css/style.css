@@ -38,15 +38,20 @@ nav ul li {
 
 .home:hover{
   font-weight:bold;
+  color: orangered;
+
 }
 
 .MyProject{
   color: black;
+  
 
 }
 
 .MyProject:hover{
 font-weight: bolder;
+color: orangered;
+
 }
 
 .conbar{
@@ -69,7 +74,7 @@ font-weight: bolder;
 
 .contactMe a:hover{
   transition: 0.1s;
-background-color: rgb(3, 3, 26);
+background-color: orangered;
 
 }
  /* postcard */

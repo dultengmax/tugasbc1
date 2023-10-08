@@ -37,15 +37,19 @@ body{
 
  .home:hover{
    font-weight:bold;
+   color: orangered;
  }
 
  .MyProject{
    color: black;
+   
 
  }
 
 .MyProject:hover{
   font-weight:bold;
+  color: orangered;
+
 
 }
 
@@ -69,7 +73,7 @@ body{
 
  .contactMe a:hover{
    transition: 0.1s;
-background-color: rgb(3, 3, 26);
+background-color:orangered;
 
 }
 

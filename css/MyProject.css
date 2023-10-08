@@ -37,6 +37,7 @@ body{
 
  .home:hover{
    font-weight:bold;
+   color: orangered;
  }
 
  .MyProject{
@@ -46,6 +47,7 @@ body{
 
 .MyProject:hover{
   font-weight:bold;
+  color: orangered;
 
 }
 
@@ -69,7 +71,7 @@ body{
 
  .contactMe a:hover{
    transition: 0.1s;
-background-color: rgb(3, 3, 26);
+background-color: orangered;
 }
 
 /* my project */
@@ -183,6 +185,12 @@ text,textarea {
     border-radius:7px;
     margin-bottom: 20px;
     justify-content: center;
+    cursor: pointer;
+}
+
+.submit:hover{
+    transition: 0.1s;
+    background-color: orangered;
 }
 
 
