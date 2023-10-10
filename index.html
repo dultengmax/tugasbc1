@@ -22,13 +22,28 @@
                     <li>
                          <a class="MyProject" href="MyProject.html">My Project</a>
                     </li>
+                    <li>
+                      <a class="testimony" href="testimony.html">Testimony</a>
+                 </li>
                </ul>
           </div>
           <div class="contactMe">
                <a href="contact.html">Contact me</a>
           </div>
+          <div class="hamburger"  id="hamburger">
+               <button onclick="openHamburger()"><i class="fa-solid fa-burger fa-2xl" style="color: #0d203f;"></i></button>
+          </div>
 
      </nav>
+
+     
+     <div class="hamburger-item" id="hamburger-item" style="display: none;">
+          <a href="index.html" >Home</a>
+          <a href="MyProject.html">My Project</a>
+          <a href="testimony.html">Testimonial</a>
+          <a href="contact.html">Contact Me</a>
+      </div>
+  
 
      <!-- main menu -->
 
@@ -36,7 +51,7 @@
 
       <div class="sex">
 
-           <section >
+           <section class="section" >
                 
            <h1 >Hey Welcome to my hut</h1> 
            <p1 >
@@ -58,16 +73,14 @@
 
                <!-- download cv -->
                          
-               <div style="margin-left: 200px; ">
+               <div class="icon">
 
                     <i class="fa-brands fa-linkedin fa-2x" style="margin: 10px;"></i>
                     <i class="fa-brands fa-instagram fa-2x" style="margin: 5px;"></i>
                     <i class="fa-brands fa-facebook fa-2x" style="margin: 10px;"></i>
                     <i class="fa-brands fa-twitter fa-2x"></i>
-                  </div>
+               </div>
          
-
-               
 
      </section>
        
@@ -75,14 +88,14 @@
        
         <img "/ src="./image/20th-century-boys-1245727.jpeg" alt="saya" class="by">
      
-        <b style="font-size: small; margin-bottom: 10px;">Abdul Aziz Nashirudin<br></b>
-        <p2 style="font-size: small; text-align: justify;">fullstack developer</p2>
+        <b >Abdul Aziz Nashirudin<br></b>
+        <p2>fullstack developer</p2>
         
 
         </div>   
      </div>  
   </div>      
 </div>
-
+<script src="./js/hamburger.js"></script>
 </body>
 </html>

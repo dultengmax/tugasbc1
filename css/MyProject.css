@@ -40,6 +40,17 @@ body{
    color: orangered;
  }
 
+
+ .testimony{
+    color: black;
+ }
+ 
+ .testimony:hover{
+   font-weight:bold;
+   color: orangered;
+ 
+ }
+
  .MyProject{
    color: black;
 
@@ -74,16 +85,36 @@ body{
 background-color: orangered;
 }
 
+
+#hamburger{
+    display: none;
+ }
+ .hamburger-item{
+    width: 100vh;
+    display: none;
+ }
+ .hamburger-item a {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    background-color: #09083a;
+    display: flex;
+ flex-direction: column;  
+  align-items: center;
+    justify-content: center;
+    padding: 10px;
+    border: none;
+ }
+
 /* my project */
 
 .blogContain {
     display: flex;
-    width: 700px; height:auto;
+    width: 100%; height:auto;
     margin: auto;
 }
 
  .blogFrom  {
-    width: 400px; height: auto;
+    width: 40%; height: auto;
     margin: auto;    
 }
 
@@ -101,6 +132,7 @@ form div{
 }
 
 .text{
+    box-sizing: border-box;
     display: flex;
     flex-direction: column;
 }
@@ -110,6 +142,7 @@ label{
 }
 
 text,textarea {
+    box-sizing: border-box;
     display: flex;
     width: 100%;
     box-sizing: border-box;
@@ -120,18 +153,18 @@ text,textarea {
 }
 
 .dates{
-
+    box-sizing: border-box;
      display: flex;
      flex-direction: column;
-     width: 250px;
+     width: 50%;
     margin: 10px;    
 }
 
 .dated{
-
+    box-sizing: border-box;
     display: flex;
     flex-direction: column;
-    width: 250px;
+    width: 50%;
    margin: 10px;
    
 }
@@ -216,7 +249,7 @@ text,textarea {
 
 .fillblog{
     width: 300px;
-    height: 420px;
+    height: 470px;
     margin: 40px ;
     display: flex;
     flex-direction: column;
@@ -251,6 +284,7 @@ text,textarea {
 
 .textblog{
     height: auto; width: auto;
+    box-sizing: border-box;
 }
 
 .icon{
@@ -269,4 +303,103 @@ text,textarea {
 .submitblog{
     display: flex;
     justify-content: space-evenly;
+}
+
+
+@media only screen and (max-width:700px) {
+
+    .contactMe{
+     display: none;
+    }
+    .home{
+     display: none;
+    }.MyProject{
+     display: none;
+    }.testimony{
+     display: none;
+    }
+  
+    #hamburger{
+     margin-right: 40px;
+     display: block;
+    }
+
+    .blogFrom{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .date{
+        display: flex;
+        flex-direction: column;
+        justify-self: start;
+        height: 160px;
+        margin-bottom: 20px;
+    }
+    .dated,.dates{
+        width: 90%;
+        box-sizing: border-box;
+    }
+
+    /* fillblog */
+
+    .fillblog{
+        width: 200px;
+        height: 470px;
+        margin: 40px ;
+        display: flex;
+        flex-direction: column;
+        border-radius: 10px;
+        box-shadow: rgb(179, 179, 179) 0 4px 10px ;
+        background-color: rgb(253, 253, 253);
+    }
+    
+    
+    
+    .image-display{
+        display: flex;
+        height: 100px;
+        width: 200px;
+        box-sizing: border-box;
+        border-radius: 3px;
+    
+    }
+    
+    
+    .fit-text{
+     margin-bottom: 30px;
+     margin-left: 24px;
+     }
+    
+    .imagesc{
+        width: 100%;
+        height: 200px;
+        border-radius: 10px 10px 0 0;
+    
+    }
+    
+    .textblog{
+        height: auto; width: auto;
+        box-sizing: border-box;
+    }
+    
+    .icon{
+        display: flex;
+        justify-content: center;
+        flex-direction: row;
+        size: 10px;
+    }
+    
+    #iconstate{
+        display: flex;
+        justify-content: center;
+        margin-right: 10px;
+        margin-bottom: 30px;
+    }
+    
+    .submitblog{
+        display: flex;
+        justify-content:space-around;
+    }
+    
 }

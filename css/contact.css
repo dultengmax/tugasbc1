@@ -40,6 +40,16 @@ body{
    color: orangered;
  }
 
+ .testimony{
+   color: black;
+}
+
+.testimony:hover{
+  font-weight:bold;
+  color: orangered;
+
+}
+
  .MyProject{
    color: black;
    
@@ -77,14 +87,33 @@ background-color:orangered;
 
 }
 
+#hamburger{
+   display: none;
+}
+.hamburger-item{
+   width: 100%;
+   display: none;
+}
+.hamburger-item a {
+   text-decoration: none;
+   color: rgb(255, 255, 255);
+   background-color: #09083a;
+   display: flex;
+   flex-direction: column;  
+   text-align: center;
+   padding: 10px;
+   border: none;
+}
+
  form{
      height: auto;
-    width: 350px;
-    margin: auto;   
+    width: 40%;
+    margin: 70px auto;   
  }
 
  form h2 {
     text-align: center;
+    font-size: x-large;
     font-weight: bold;
  }
  form div{
@@ -103,14 +132,22 @@ input, select, textarea {
     padding: 5px;
     margin-top: 3px;
     border-radius: 5px;
+    box-sizing: border-box;
     border: 1px solid #dbdbdb;
     resize: none;
+}
+
+.button-box{
+   display: flex;
+   box-sizing: border-box;
+   justify-content: end;
 }
 
 button{
     
     margin-top: 15px;
-    margin-left: 300px;
+    margin-left: 90%;
+    box-sizing: border-box;
     background-color: rgb(18, 18, 65);
     color: white;
     border: none;
@@ -121,4 +158,28 @@ button{
 
 button:hover{
     background-color: black;
+}
+
+
+@media only screen and (max-width:600px) {
+
+   .contactMe{
+    display: none;
+   }
+   .contactMe a{
+      display: none;
+     }
+   .home{
+    display: none;
+   }.MyProject{
+    display: none;
+   }.testimony{
+    display: none;
+   }
+ 
+   #hamburger{
+    display: block;
+    margin-right: 40px;
+   }
+ 
 }
