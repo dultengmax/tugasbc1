@@ -3,25 +3,25 @@ const testimonialData = [
     {
       author: "Abdul",
       quote: "gila banget sih ini",
-      image: "https://unsplash.com/photos/mpw37yXc_WQ?utm_content=creditShareLink&utm_medium=referral&utm_source=unsplash",
+      image: "https://images.unsplash.com/photo-1691558326149-89e131a8e44f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80",
       rating: 5,
     },
     {
       author: "aziz",
       quote: "suka banget sama yang punya web",
-      image: "https://unsplash.com/photos/mpw37yXc_WQ?utm_content=creditShareLink&utm_medium=referral&utm_source=unsplash",
+      image: "https://images.unsplash.com/photo-1475823678248-624fc6f85785?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80",
       rating: 4,
     },
     {
       author: "nashir",
       quote: "sarangheyooo",
-      image: "https://unsplash.com/photos/mpw37yXc_WQ?utm_content=creditShareLink&utm_medium=referral&utm_source=unsplash",
+      image: "https://images.unsplash.com/photo-1475823678248-624fc6f85785?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80",
       rating: 4,
     },
     {
       author: "rudin",
       quote: " yang bikin di doain masuk surga",
-      image:"https://unsplash.com/photos/mpw37yXc_WQ?utm_content=creditShareLink&utm_medium=referral&utm_source=unsplash",
+      image:"https://images.unsplash.com/photo-1475823678248-624fc6f85785?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80",
       rating: 2,
     },
   ];
