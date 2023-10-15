@@ -4,6 +4,11 @@
 <head>
      <meta charset="UTF-8">
      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+          integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+          crossorigin="anonymous"></script>
      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
           integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
           crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -13,8 +18,42 @@
 
 <body>
 
+<!-- navbar bootstrap -->
+     <nav class="navbar navbar-expand-lg bg-body-tertiary">
+          <div class="container-fluid">
+               <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false"
+                    aria-label="Toggle navigation"
+                    target="#collapsibleNavbar">
+                    <span class="navbar-toggler-icon"></span>
+               </button>
+               <div class="collapse navbar-collapse text-center" id="navbarTogglerDemo01">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                         <li class="me-4" >
+                              <a class="nav-link active" aria-current="page" href="index.html"><img src="./image/logo.png"
+                                        alt="logodumb" /></a>
+                         </li>
+                         <li class="nav-item me-2">
+                              <a class="nav-link active fs-5 fw-semibold text-primary-emphasis" id="nav-text" aria-current="page" href="index.html">HOME</a>
+                         </li>
+                         <li class="nav-item me-2">
+                              <a class="nav-link active fs-5 fw-semibold text-primary-emphasis" id="nav-text" aria-current="page"  href="MyProject.html">ADD PROJECT</a>
+                         </li>
+                         <li class="nav-item me-2">
+                              <a class="nav-link active fs-5 fw-semibold text-primary-emphasis" id="nav-text" aria-current="page" href="testimony.html">TESTIMONIAL</a>
+                         </li>
+                    </ul>
+                    <div class="d-flex justify-content-center me-2">
+                         <a href="contact.html"><button class="btn btn-primary btn-sm" id="button">CONTACT ME</button></a>
+                    </div>
+               </div>
+          </div>
+     </nav>
+
+     <!-- navbar bootstrap end -->
+
      <!-- navigation bar -->
-     <nav>
+     <!-- <nav>
           <div class=" conbar">
                <ul>
                     <li>
@@ -39,73 +78,101 @@
                          style="color: #0d203f;"></i></button>
           </div>
 
-     </nav>
+     </nav> -->
 
 
-     <div class="hamburger-item" id="hamburger-item" style="display: none;">
+     <!-- <div class="hamburger-item" id="hamburger-item" style="display: none;">
           <a href="index.html">Home</a>
           <a href="MyProject.html">My Project</a>
           <a href="testimony.html">Testimonial</a>
           <a href="contact.html">Contact Me</a>
-     </div>
+     </div> -->
 
 
      <!-- main menu -->
 
-     <div class="conbox">
-
-          <div class="sex">
-
-               <section class="section">
-
-                    <h1>Hey Welcome to my hut</h1>
-                    <p1>
-                         My name is Abdul Aziz Nashirudin, but you can call me Abdul.
-                         I come from Bandung and hold a degree in Physics from Padjadjaran University.
-                         During my time in university, I gained valuable experience as a laboratory instrumentation
-                         assistant and was actively involved in various organizations.
-                         Being a scientist by training has made me adaptable and a quick learner.
-                         I am enthusiastic about delving into the advancements of digital transformation and aspire to
-                         become a pirate king.
-                         My diverse background and experiences have shaped me into someone who's always ready to embrace
-                         new challenges and opportunities.
-                    </p1>
-
-                    <div class="btn">
-
-                         <button>Contact</button>
-                         <a class="downloadcv" href="">Download CV</a>
-                         <img src="/image/download.svg" alt="" style="height: 10px;" />
-
+     <div class="d-flex justify-content-center align-items-center bg-body-secondary">
+          <div class="card mt-5 mb-4 w-75 h-10 shadow p-3 mb-5 rounded" >
+               <div class="row g-0">
+                    
+                    <div class="col-md-7">
+                    <div class="card-body my-5">
+                              <h2 class="card-title mb-3">Hey Welcome to my hut</h2>
+                              <p class="card-text " style="text-align:justify;">My name is Abdul Aziz Nashirudin, but you can call me Abdul.
+                                  I come from Bandung and hold a degree in Physics from Padjadjaran University.
+                                  During my time in university, I gained valuable experience as a laboratory instrumentation
+                                  assistant and was actively involved in various organizations.
+                                  Being a scientist by training has made me adaptable and a quick learner.
+                                  I am enthusiastic about delving into the advancements of digital transformation and aspire to
+                                  become a pirate king.
+                                  My diverse background and experiences have shaped me into someone who's always ready to embrace
+                                  new challenges and opportunities.</p>
+                              <p class="card-text"><small class="text-body-secondary"><span><a href="contact.html" class="btn btn-primary btn-sm me-3" id="button">Contact Me</a></span><a class="link-body-emphasis link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover"" href="">Download CV</a></small></p>
+                              <div class="text-center">
+                                  <a href="https://www.linkedin.com/in/abdul-aziz-nashirudin-970188216/" ><i class="fa-brands fa-linkedin fa-2x me-3" href="contact.html" ></i></a>
+                                  <a href="https://www.instagram.com/dultengmax/"><i class="fa-brands fa-instagram fa-2x me-3" "></i></a>                                  
+                                  <a href="https://www.facebook.com/abdulaziznasirudin/"><i class="fa-brands fa-facebook fa-2x me-3" "></i></a>
+                                  <a href="https://twitter.com/home"><i class="fa-brands fa-twitter fa-2x me-3"></i> </a>
+                               </div>
+                   </div>
+                 </div>
+                 <div class="card col-md-4 my-5 mx-auto  text-center">
+                      <img src="/image/20th-century-boys-1245727.jpeg" alt="" class="card-img-top" width="260" height="250"  >
+                      <div class="card-body align-items-center">
+                          <b>Abdul Aziz Nashirudin<br></b>
+                          <p2>fullstack developer</p2>
+                      </div>
                     </div>
+               </div>
+             </div>
+         </div>
 
-                    <!-- download cv -->
+         <!-- my project -->
 
-                    <div class="icon">
-
-                         <i class="fa-brands fa-linkedin fa-2x" style="margin: 10px;"></i>
-                         <i class="fa-brands fa-instagram fa-2x" style="margin: 5px;"></i>
-                         <i class="fa-brands fa-facebook fa-2x" style="margin: 10px;"></i>
-                         <i class="fa-brands fa-twitter fa-2x"></i>
+             <!-- project board -->
+             <div class="w-75 mx-auto">
+               <div class="text-center my-3"><h1>MY PROJECT</h1></div> 
+               <div class="row row-cols-3 row-cols-md-2 g-7 " id="filblog">
+                    <div class="col-md-3">
+                      <div class="card">
+                        <img src="./image/20th-century-boys-1245727.jpeg" class="card-img-top" alt="./image/20th-century-boys-1245727.jpeg">
+                        <div class="card-body">
+                          <h5 class="card-title">Card title</h5>
+                          <p class="card-text"> waktu</p>
+                          <p class="card-text">deskripsi</p>
+                          <p class="card-text"></p>
+                          <a href="contact.html" class="btn btn-primary btn-sm me-3" id="button">edit</a>
+                          <a href="contact.html" class="btn btn-primary btn-sm me-3" id="button">delete</a>
+                        </div>
+                      </div>
                     </div>
-
-
-               </section>
-
-               <div class="jav">
-
-                    <img "/ src=" ./image/20th-century-boys-1245727.jpeg" alt="saya" class="by">
-
-                    <b>Abdul Aziz Nashirudin<br></b>
-                    <p2>fullstack developer</p2>
-
-
+                    <div class="col-md-3">
+                      <div class="card">
+                        <img src="./image/20th-century-boys-1245727.jpeg" class="card-img-top" alt="./image/20th-century-boys-1245727.jpeg">
+                        <div class="card-body">
+                          <h5 class="card-title">Card title</h5>
+                          <p class="card-text"></p>
+                          <p class="card-text"></p>
+                          <p class="card-text"></p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-md-3">
+                      <div class="card">
+                        <img src="./image/20th-century-boys-1245727.jpeg" class="card-img-top" alt="./image/20th-century-boys-1245727.jpeg">
+                        <div class="card-body">
+                          <h5 class="card-title">Card title</h5>
+                          <p class="card-text"></p>
+                          <p class="card-text"></p>
+                          <p class="card-text"></p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
                </div>
           </div>
-     </div>
-     </div>
-     <script src="./js/hamburger.js"></script>
-     <script src="./js/exercise.js"></script>
-</body>
+               
+               <script src="./js/blog.js"></script>
+          </body>
 
 </html>

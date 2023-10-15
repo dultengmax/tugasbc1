@@ -4,58 +4,151 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>MyProject</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="./css/MyProject.css"/>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+    crossorigin="anonymous"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+<link rel="stylesheet" href="./css/style.css" />
 </head>
+
+
 <body>
+    
+     <!-- navbar bootstrap -->
+     <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+             <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false"
+                  aria-label="Toggle navigation"
+                  target="#collapsibleNavbar">
+                  <span class="navbar-toggler-icon"></span>
+             </button>
+             <div class="collapse navbar-collapse text-center" id="navbarTogglerDemo01">
+                  <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                       <li class="me-4" >
+                            <a class="nav-link active" aria-current="page" href="index.html"><img src="./image/logo.png"
+                                      alt="logodumb" /></a>
+                       </li>
+                       <li class="nav-item me-2">
+                            <a class="nav-link active fs-5 fw-semibold text-primary-emphasis" id="nav-text" aria-current="page" href="index.html">HOME</a>
+                       </li>
+                       <li class="nav-item me-2">
+                            <a class="nav-link active fs-5 fw-semibold text-primary-emphasis" id="nav-text" aria-current="page"  href="MyProject.html">ADD PROJECT</a>
+                       </li>
+                       <li class="nav-item me-2">
+                            <a class="nav-link active fs-5 fw-semibold text-primary-emphasis" id="nav-text" aria-current="page" href="testimony.html">TESTIMONIAL</a>
+                       </li>
+                  </ul>
+                  <div class="d-flex justify-content-center me-2">
+                       <a href="contact.html"><button class="btn btn-primary btn-sm" id="button">CONTACT ME</button></a>
+                  </div>
+             </div>
+        </div>
+   </nav>
+
+   <!-- navbar bootstrap end -->
+
+   <div class="d-flex justify-content-center align-items-center bg-body-secondary">
+
+     
+     <div class="d-flex justify-content-center rounded-3 bg-white mx-2 my-5" style="width: 60%;">
+       
+      <form class="card border border-white my-4" my-5>
+         <h2 class=" text-center">ADD MY PROJECT</h2>
+
+       <div class="mb-3">
+        <label for="nameproject" class="form-label">Name</label>
+        <input type="text" class="form-control" id="nameproject" placeholder="ketik nama project..">
+      </div>
+
+      <div class="row g-0 justify-content-center  mb-3">
+        <div class="col-auto me-1">
+          <label for="sdate" class="col-form-label">Star Date</label>
+        </div>
+        <div class="col-auto me-2 ">
+          <input type="date" id="sdate" class="form-control" aria-describedby="date">
+        </div>
+            <div class="col-auto me-1">
+              <label for="edate" class="col-form-label ">End Date</label>
+            </div>
+            <div class="col-auto">
+              <input type="date" id="edate" class="form-control" aria-describedby="date">
+            </div>
+      </div>
+
+      <!-- checkbox bootstrap -->
+
+        <div class="row mt-4">
+            <div class="col-sm-5 offset-sm-2">
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" id="tekno1">
+                <label class="form-check-label" for="tekno1">
+                 node.js
+                </label>
+              </div>
+            </div>
+            <div class="col-sm-5 ">
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" id="tekno2">
+                <label class="form-check-label" for="tekno2">
+                  react.js
+                </label>
+              </div>
+            </div>
+        </div>
+            
+        <div class="row mb-3"> 
+            <div class="col-sm-5 offset-sm-2">
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" id="tekno3">
+                <label class="form-check-label" for="tekno3">
+                  next.js
+                </label>
+              </div>
+            </div>
+            <div class="col-sm-5 ">
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" id="tekno4">
+                <label class="form-check-label" for="tekno4">
+                  Javascript
+                </label>
+              </div>
+            </div>
+        </div>
+
+
+        <!-- checkbox bootstrap -->
+                             
+      <div class="mb-3">
+        <label for="des" class="form-label">Descripsi</label>
+        <textarea class="form-control" id="des" rows="3"></textarea>
+      </div>
 
     
-     <!-- navigation bar -->
-     <nav>
-        <div class=" conbar">
-             <ul>
-                  <li>
-                       <img src="./image/logo.png" alt="logodumb"/> 
-                  </li>
-                  <li>
-                       <a class="home" href="index.html">Home</a>
-                  </li>
-                  <li>
-                       <a class="MyProject" href="MyProject.html">My Project</a>
-                  </li>
-                  <li>
-                    <a class="testimony" href="testimony.html">Testimony</a>
-               </li>
-             </ul>
-        </div>
-        <div class="contactMe">
-             <a href="contact.html">Contact me</a>
-        </div>
-        <div class="hamburger"  id="hamburger">
-             <button onclick="openHamburger()"><i class="fa-solid fa-burger fa-2xl" style="color: #0d203f;"></i></button>
-        </div>
+        <label  for="uplod" class="form-label">Upload</label>
+        <input type="file" class="form-control" id="uplod">
 
-
-        
-    </nav>
-    <div class="hamburger-item" id="hamburger-item">
-         <a href="index.html" >Home</a>
-         <a href="MyProject.html">My Project</a>
-         <a href="testimony.html">Testimonial</a>
-         <a href="contact.html">Contact Me</a>
-     </div>
- 
-
-   <!-- end nav -->
-
+        <div>
+            <button type="button" onclick="addblog()" class="btn btn-primary btn-sm mt-4 offset-sm- ">Submit</button>
+          </div>
+          
+          
+        </form>    
+      </div>
+    </div>
+      
+       
    
    <!-- blog mockup -->
 
-   <div class="blog">
+   <!-- <div class="blog">
      <div class="blogContain"> 
         <div class="blogFrom">
             <form onsubmit="addblog(event)">
-                <h2>ADD MY PROJECT</h2>
 
                 <div class="text">
                     <label for="nameproject">Project Name</label>
@@ -83,7 +176,7 @@
 
                 <!-- cexbox -->
 
-
+<!-- 
                     <label for="tekno"" >Teknologies</label>
                     <div class="teknologi">
                         <table class="box">
@@ -105,7 +198,7 @@
                 <!-- upload -->
 
                 
-                    <label for="uplod">Upload Image</label>
+                    <!-- <label for="uplod">Upload Image</label>
                   <div class="upload">
                     <div class="upl">
                         <input type="file" id="uplod" class="uplod"/>
@@ -118,46 +211,10 @@
                     <button type="submit"  class="submit">Submit</button>
                 </div>
             </form>
-        </div>    
-    </div>
-
-    <!-- project board -->
-      <div class="basic1">
-             <div class="title"><h1>MY PROJECT</h1></div> 
-
-             <div class="basic2" id="filblog">
-
-                   <div class="fillblog" >
-                      <div class="image-display">
-                         <img src="./image/20th-century-boys-1245727.jpeg" alt="" class="imagesc"/>
-                      </div>
-
-                      <div class="textblog">
-                        <div class="fit-text">
-                            <div class="fit-text-blog"><p style="font-weight: bold; font-size: larger;">project contohh gais</p></div>
-                            <div class="fit-text-blog"><p style="color: rgb(104, 104, 104); font-size: smaller;"><i>jam 10 malam</i></p></div>
-                            <div class="fit-text-blog"><p style="font-size: small;">jadi gitu gaes ini cuman template doang sihh tampliannya kayak gini,boleh dicoba bikin</p></div>
-                        </div> 
-                        <div class="icon">
-                            <i class="fa-brands fa-square-js fa-xl" id="iconstate"></i>
-                            <i class="fa-brands fa-react fa-xl"id="iconstate"></i>
-                            <i class="fa-brands fa-node fa-xl" id="iconstate"></i>
-                            <i class="fa-brands fa-square-facebook fa-xl" id="iconstate"></i>
-                            
-                        </div>
-                        <div class="submitblog">
-                            <button class="submit">edit</button>
-                            <button class="submit">delete</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-          </div>
-   </div>
+        </div>     -->
+    <!-- </div> -->
 
    <script src="./js/blog.js"></script>
-   <script src="./js/hamburger.js"></script>
-
     
 </body>
 </html>

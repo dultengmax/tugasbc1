@@ -107,16 +107,19 @@ async function allTestimonial() {
     let testimonialHTML = "";
     response.forEach(function (item) {
       testimonialHTML += `
-              <div class="testimonial">
-                  <img
-                      class="profile-testimonial"
-                      src="${item.image}"
-                      alt="profile"
-                  />
-                  <p class="quote">${item.quote}</p>
-                  <p class="author">- ${item.author}</p>
-                  <p class="author">${item.rating} <i class="fa-solid fa-star"></i></p>
-              </div>
+           <div class="cols ">
+           <div class="card  my-2  mx-3">
+           <img
+           class="card-img-top" width="200" height="220"
+           src="${item.image}"
+           alt="profile"
+           />
+           <p class="quote">${item.quote}</p>
+           <p class="author">- ${item.author}</p>
+           <p class="author">${item.rating} <i class="fa-solid fa-star"></i></p>
+           </div>
+           </div>
+          
           `;
     });
     document.getElementById("testimonials").innerHTML = testimonialHTML;
@@ -146,17 +149,20 @@ allTestimonial()
       } else {
         testimonialFiltered.forEach(function (item) {
           testimonialHTML += `
-                <div class="testimonial">
-                    <img
-                        class="profile-testimonial"
-                        src="${item.image}"
-                        alt="profile"
-                    />
-                    <p class="quote">${item.quote}</p>
-                    <p class="author">- ${item.author}</p>
-                    <p class="author">${item.rating} <i class="fa-solid fa-star"></i></p>
+                <<div class="cols-md-3">
+                <div class="card  my-2 ">
+                <img
+                class="card-img-top" width="200" height="220"
+                src="${item.image}"
+                alt="profile"
+                />
+                <p class="quote">${item.quote}</p>
+                <p class="author">- ${item.author}</p>
+                <p class="author">${item.rating} <i class="fa-solid fa-star"></i></p>
                 </div>
-            `;
+                </div>
+               
+               `;
         });
       }
   

@@ -3,10 +3,18 @@
  *{
     text-decoration: none;
     font-family: 'Poppins', sans-serif;
-    color: black;
  }
 
- body{
+ #nav-text:hover{
+   transition: 0.1s;
+   color: orangered !important;
+ }
+ #button:hover{
+   background-color: orangered;
+   border: none;
+ }
+
+ /* body{
    margin:0; 
    padding:0;
    background-color:rgb(171, 177, 182);
@@ -180,7 +188,7 @@ background-color: orangered;
     border-radius: 11px;
  }
 
- @media only screen and (max-width:600px) {
+ /* @media only screen and (max-width:600px) {
 
   .contactMe{
    display: none;
@@ -251,4 +259,4 @@ background-color: orangered;
 
  }
 
- 
+  */ 

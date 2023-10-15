@@ -1,9 +1,12 @@
+
 let datablog=[];
-function addblog(event) {
-    event.preventDefault();
+
+function addblog() {
+
+    // event.preventDefault();
     let Name = document.getElementById("nameproject").value;
-    let StartDate = new Date(document.getElementById("sdate").value);
-    let EndDate = new Date(document.getElementById("edate").value);
+    let StartDate = new Date(document.getElementById("sdate"));
+    let EndDate = new Date(document.getElementById("edate"));
     let descripsion = document.getElementById("des").value;
     let teknologi1= document.getElementById("tekno1");
     let teknologi2= document.getElementById("tekno2");
@@ -90,9 +93,10 @@ let duration;
 
     } 
     datablog.push(blog);
-    console.log(datablog);
-    renderblog();
-}
+     renderblog();
+    console.log(blog);
+  }
+
 
   function renderblog(){
     document.getElementById("filblog").innerHTML =``;
@@ -100,39 +104,33 @@ let duration;
       console.log(datablog[i])
    
     document.getElementById("filblog").innerHTML +=`
-          
 
-              <div class="fillblog">
-               <div class="fill-blog">
 
-                     <div class="image-display">
-                        <img src="${datablog[i].Uplode}" alt="" class="imagesc"/>
-                    </div>
-                    <div class="textblog">
-                        <div class="fit-text">
-                            <div class="fit-text-blog"><p style="font-weight: bold; font-size: larger;">${datablog[i].Namanya}</p></div>
-                            <div class="fit-text-blog"><p style="color: rgb(104, 104, 104); font-size: smaller;"><i>${datablog[i].duration}</i></p></div>
-                            <div class="fit-text-blog"><p style="font-size: small;">${datablog[i].descripsion}</p></div>
-                        </div> 
-                        <div class="icon">
-                           ${datablog[i].jsicon}
-                           ${datablog[i].reacticon}
-                           ${datablog[i].nexticon}
-                           ${datablog[i].typeicon}
-                            
+        <div class="col-md-3">
+                      <div >
+                        <img src="${datablog[i].Uplode}" alt="./image/20th-century-boys-1245727.jpeg" >
+                        <div class="card-body">
+                          <h5 class="card-title">${datablog[i].Namanya}</h5>
+                          <p class="card-text">${datablog[i].duration}</p>
+                          <p class="card-text">${datablog[i].descripsion}</p>
+                          <div class="icon">
+                          ${datablog[i].jsicon}
+                          ${datablog[i].reacticon}
+                          ${datablog[i].nexticon}
+                          ${datablog[i].typeicon}  
+                          </div>
+                          <div class="submitblog">
+                          <button class="submit">edit</button>
+                          <button class="submit">delete</button>
+                          </div>
                         </div>
-                        <div class="submitblog">
-                            <button class="submit">edit</button>
-                            <button class="submit">delete</button>
-                        </div>
-                    </div>
-                  </div>
-                </div>`;
+                      </div>
+                    </div>`;
     }
   }
-  setInterval(function () {
-    renderBlog();
-  }, 1000);
+  // setInterval(function () {
+  //   renderBlog();
+  // }, 1000);
  /* function getFullTime(time){
 
   let monthname=[ "jan","feb","mar","apr","mei","jun","jul","aug","sep","oct","nov","dec",]
