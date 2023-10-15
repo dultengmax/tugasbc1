@@ -30,21 +30,21 @@
              <div class="collapse navbar-collapse text-center" id="navbarTogglerDemo01">
                   <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                        <li class="me-4" >
-                            <a class="nav-link active" aria-current="page" href="index.html"><img src="./image/logo.png"
+                            <a class="nav-link active" aria-current="page" href="home"><img src="./image/logo.png"
                                       alt="logodumb" /></a>
                        </li>
                        <li class="nav-item me-2">
-                            <a class="nav-link active fs-5 fw-semibold text-primary-emphasis" id="nav-text" aria-current="page" href="index.html">HOME</a>
+                            <a class="nav-link active fs-5 fw-semibold text-primary-emphasis" id="nav-text" aria-current="page" href="home">HOME</a>
                        </li>
                        <li class="nav-item me-2">
-                            <a class="nav-link active fs-5 fw-semibold text-primary-emphasis" id="nav-text" aria-current="page"  href="MyProject.html">ADD PROJECT</a>
+                            <a class="nav-link active fs-5 fw-semibold text-primary-emphasis" id="nav-text" aria-current="page"  href="addproject">ADD PROJECT</a>
                        </li>
                        <li class="nav-item me-2">
-                            <a class="nav-link active fs-5 fw-semibold text-primary-emphasis" id="nav-text" aria-current="page" href="testimony.html">TESTIMONIAL</a>
+                            <a class="nav-link active fs-5 fw-semibold text-primary-emphasis" id="nav-text" aria-current="page" href="testimony">TESTIMONIAL</a>
                        </li>
                   </ul>
                   <div class="d-flex justify-content-center me-2">
-                       <a href="contact.html"><button class="btn btn-primary btn-sm" id="button">CONTACT ME</button></a>
+                       <a href="contact"><button class="btn btn-primary btn-sm" id="button">CONTACT ME</button></a>
                   </div>
              </div>
         </div>
@@ -57,12 +57,12 @@
      
      <div class="d-flex justify-content-center rounded-3 bg-white mx-2 my-5" style="width: 60%;">
        
-      <form class="card border border-white my-4" my-5>
+      <form class="card border border-white my-4" method="post" action="/addproject">
          <h2 class=" text-center">ADD MY PROJECT</h2>
 
        <div class="mb-3">
         <label for="nameproject" class="form-label">Name</label>
-        <input type="text" class="form-control" id="nameproject" placeholder="ketik nama project..">
+        <input type="text" name="title" class="form-control" id="nameproject" placeholder="ketik nama project..">
       </div>
 
       <div class="row g-0 justify-content-center  mb-3">
@@ -125,7 +125,7 @@
                              
       <div class="mb-3">
         <label for="des" class="form-label">Descripsi</label>
-        <textarea class="form-control" id="des" rows="3"></textarea>
+        <textarea class="form-control" name="content" id="des" rows="3"></textarea>
       </div>
 
     
@@ -133,7 +133,7 @@
         <input type="file" class="form-control" id="uplod">
 
         <div>
-            <button type="button" onclick="addblog()" class="btn btn-primary btn-sm mt-4 offset-sm- ">Submit</button>
+            <button type="submit"  class="btn btn-primary btn-sm mt-4 offset-sm- ">Submit</button>
           </div>
           
           
@@ -214,7 +214,7 @@
         </div>     -->
     <!-- </div> -->
 
-   <script src="./js/blog.js"></script>
+   {{!-- <script src="./js/blog.js"></script> --}}
     
 </body>
 </html>
