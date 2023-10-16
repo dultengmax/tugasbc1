@@ -83,7 +83,7 @@
 const testimonial = new Promise((resolve, reject) => {
   const xhr = new XMLHttpRequest();
 
-  xhr.open("GET", "https://api.npoint.io/d9394854f516f8c83369", true);
+  xhr.open("GET", "https://api.npoint.io/eeb356f848f031376c1b", true);
 
   xhr.onload = () => {
     if (xhr.status == 200) {
@@ -114,8 +114,8 @@ async function allTestimonial() {
            src="${item.image}"
            alt="profile"
            />
-           <p class="quote">${item.quote}</p>
-           <p class="author">- ${item.author}</p>
+           <p class="quote">${item.comment}</p>
+           <p class="author">- ${item.name}</p>
            <p class="author">${item.rating} <i class="fa-solid fa-star"></i></p>
            </div>
            </div>
@@ -156,8 +156,8 @@ allTestimonial()
                 src="${item.image}"
                 alt="profile"
                 />
-                <p class="quote">${item.quote}</p>
-                <p class="author">- ${item.author}</p>
+                <p class="quote">${item.comment}</p>
+                <p class="author">- ${item.name}</p>
                 <p class="author">${item.rating} <i class="fa-solid fa-star"></i></p>
                 </div>
                 </div>
