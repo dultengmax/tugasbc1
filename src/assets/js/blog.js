@@ -1,5 +1,5 @@
 
-let datablog=[];
+// let datablog=[];
 
 function addblog() {
 
@@ -23,6 +23,9 @@ function addblog() {
     } else if (EndDate === "") {
       return alert("end date must be filled!");
     } else if (descripsion === "") {
+      return alert("deskription must be selected!");
+    } 
+    else if (teknologi1 === ""||teknologi2 === ""||teknologi3 === ""||teknologi4 === "") {
       return alert("deskription must be selected!");
     } 
     else if (Uplode === "") {
@@ -79,22 +82,22 @@ let duration;
 
     }
 
-    let blog= {
-      Namanya: Name,
-      StartDate:StartDate,
-      EndDate:EndDate,
-      descripsion:descripsion,
-      duration:duration,
-      jsicon,
-      reacticon,
-      nexticon,
-      typeicon,
-      Uplode:Uplode, 
+    // let blog= {
+    //   Namanya: Name,
+    //   StartDate:StartDate,
+    //   EndDate:EndDate,
+    //   descripsion:descripsion,
+    //   duration:duration,
+    //   jsicon,
+    //   reacticon,
+    //   nexticon,
+    //   typeicon,
+    //   Uplode:Uplode, 
 
-    } 
-    datablog.push(blog);
-     renderblog();
-    console.log(blog);
+    // } 
+    // datablog.push(blog);
+    //  renderblog();
+    // console.log(blog);
   }
 
 
